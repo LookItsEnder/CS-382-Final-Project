@@ -1,3 +1,45 @@
 canvas {
     border: 5px solid black; 
 }
+  
+
+
+
+/*This is how the cursor swaps to a crosshair for the eyedropper tool
+It is possible to use this for completely custom crosshairs as well, given an
+.png, .cur, or url to one of these */
+#customCursor {
+    position: absolute;
+    width: 20px; 
+    height: 20px;
+    border-radius: 50%;
+    border: 2px solid black;
+    pointer-events: none;
+}
+
+
+/* This is how the color circles are able to overlapping */
+.box {
+    position:relative;
+    height: 145px;
+}
+.color-pallet2 {
+    position: absolute;
+    width: 100px;
+    height: 100px;
+    border-radius: 100%;
+    outline-width: 5px;
+    outline-color:black;
+    outline-style: solid;
+}
+.color-pallet {
+    position: absolute;
+    margin-top: 5%;
+    margin-left: 6%;
+    width: 100px;
+    height: 100px;
+    border-radius: 100%;
+    outline-width: 5px;
+    outline-color:black;
+    outline-style: solid;
+}
