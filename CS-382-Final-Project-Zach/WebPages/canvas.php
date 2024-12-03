@@ -68,7 +68,8 @@ $username = $is_logged_in ? $_SESSION ['username'] : null;
             <input type="text" placeholder="Search..." name="search">
             <button type="submit">Search</button>
         </form>
- <!-- Login/Register or User Info -->
+ 
+        <!-- Login/Register or User Info -->
 
     <div class="auth-buttons">
 
@@ -99,25 +100,25 @@ $username = $is_logged_in ? $_SESSION ['username'] : null;
 
         <div class="brush-icon" id="brush">
             <button id="brushButton">
-                <img src="assets/brush.png">
+                <img src="../assets/brush.png">
             </button>
         </div>
 
         <div class="eraser-icon" id="eraser">
             <button id="eraserButton">
-                <img src="assets/eraser.png">
+                <img src="../assets/eraser.png">
             </button>
         </div>
 
         <div class="eyedropper-icon" id="eyedropper">
             <button id="eyedropperButton">
-                <img src="assets/eyedropper.png">
-            </button>
+                <img src="../assets/eyedropper.png">
+            </button>../
         </div>
 
         <div class="stamp-icon" id="stamp">
             <button id="stampButton">
-                <img src="assets/stamp.png">
+                <img src="../assets/stamp.png">
             </button>
         </div>
     </div>
@@ -131,6 +132,11 @@ $username = $is_logged_in ? $_SESSION ['username'] : null;
 
     <div class="toolbarBot">
         <!-- for canvas -->
+
+        <script src="../JavaScript/Canvas.js"></script> 
+
+
+
     </div>
 
     <div class="box">
@@ -155,7 +161,7 @@ $username = $is_logged_in ? $_SESSION ['username'] : null;
    
 
 
-    <script src="../JavaScript/Canvas.js"></script>
+    
 </body>
 
 </html>

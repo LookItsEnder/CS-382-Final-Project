@@ -27,7 +27,7 @@ function initializeStart() {
   eraser_size = brush_size*2;   //how big the eraser will be
   clonestamp_size = 3;          //how big the clonestamp will be
   size = brush_size;            //the true drawing size
-  cursor('assets/circle.png');
+  cursor('../assets/circle.png');
 
   selectedArea = get(0, 0, 1, 1)  //sets selectedArea to a starting value, to fix a crash when the tool was used before a selection was made.
 
