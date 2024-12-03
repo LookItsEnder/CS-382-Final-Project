@@ -27,7 +27,7 @@ function initializeStart() {
   eraser_size = brush_size*2;   //how big the eraser will be
   clonestamp_size = 3;          //how big the clonestamp will be
   size = brush_size;            //the true drawing size
-  cursor('circle.png');
+  cursor('assets/circle.png');
 
   selectedArea = get(0, 0, 1, 1)  //sets selectedArea to a starting value, to fix a crash when the tool was used before a selection was made.
 
@@ -50,13 +50,11 @@ function initializeStart() {
 }
 
 
+
+//Toolbar 
 function createColorPallets() {
   colorPallet2 = createColorPicker();
-  colorPallet2.position(10,80);
-
   colorPallet = createColorPicker();
-  colorPallet.position(10,80);
-  
   
   colorPallet.elt.style.position = 'absolute';
   colorPallet.elt.style.marginTop = '0%';
@@ -67,7 +65,6 @@ function createColorPallets() {
   colorPallet.elt.style.outlineColor = 'black';
   colorPallet.elt.style.outlineStyle = 'solid';
   colorPallet.elt.style.marginLeft = '30px';
-  
 //------------------------------------------//
   colorPallet2.elt.style.position = 'absolute';
   colorPallet2.elt.style.width = '50px';
@@ -78,9 +75,11 @@ function createColorPallets() {
   colorPallet2.elt.style.outlineStyle = 'solid';
  
   
-  colorPallet.elt.style.opacity = '0%';
-  colorPallet2.elt.style.opacity = '0%';
+  colorPallet.elt.style.opacity = '110%';
+  colorPallet2.elt.style.opacity = '110%';
   
+  document.querySelector('.box').appendChild(colorPallet2.elt);
+  document.querySelector('.box').appendChild(colorPallet.elt);
 }
 
 
@@ -96,6 +95,51 @@ function palletColor2() {
     secondary_color = newColor; 
     setSecondaryColorPallet();
 }
+
+
+
+
+$(document).ready(function () {
+  // Brush button
+  $("#brushButton").on("click", function () {
+    console.log("Brush tool selected");
+    swapTool("brush");
+  });
+
+  // Eraser button
+  $("#eraserButton").on("click", function () {
+    console.log("Eraser tool selected");
+    swapTool("eraser");
+  });
+
+  // Eyedropper button
+  $("#eyedropperButton").on("click", function () {
+    console.log("Eyedropper tool selected");
+    swapTool("eyedropper");
+  });
+
+  // Clonestamp button
+  $("#stampButton").on("click", function () {
+    console.log("Clonestamp tool selected");
+    swapTool("clonestamp");
+  });
+});
+
+
+
+
+
+
+
+//end of toolbar
+
+
+
+
+
+
+
+
 
 function draw() {
   
@@ -188,7 +232,11 @@ function redo() {
 
 
 
+
 function keyPressed() {
+
+
+
 
 
   //save canvas to downloads
@@ -290,14 +338,14 @@ function swapTool(tool) {
     brush = true;
     draw_color = primary_color;
     size = brush_size;
-    cursor('circle.png');
+    cursor('assets/circle.png');
   }
 
   else if (tool == 'eraser') {
     eraser=true;
     erase();
     size = eraser_size;
-    cursor('circle.png');
+    cursor('assets/circle.png');
   }
 
 
@@ -311,7 +359,7 @@ function swapTool(tool) {
   else if (tool == 'clonestamp') {
     clonestamp=true;
     size = clonestamp_size;
-    cursor('square.png', clonestamp_size, clonestamp_size);
+    cursor('assets/square.png', clonestamp_size, clonestamp_size);
   }
 
 
@@ -335,3 +383,5 @@ function setSecondaryColorPallet() {
   colorPallet2.value(secondary_color);
   console.log("New Secondary Color Pallet : "+secondary_color);
 }
+
+
