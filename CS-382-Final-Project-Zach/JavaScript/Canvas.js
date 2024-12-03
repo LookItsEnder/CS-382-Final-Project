@@ -1,22 +1,40 @@
 let saveStates = [];    //for undoing (ctrl+z)
 let redoStates = [];    //for redoing (shift+ctrl+z)
 let selectedArea = [];
+let width = 0;
+let height = 0;
 
 
+function preload() {
+  requestCanvasSize();
+/*
+  let imagePath = prompt("Select an Image to import:\n 1. mountain\n 2. plains\n 3. water");
 
+  if (imagePath == "mountain") {
+    imagePath = '../assets/image.jpg';
+  }
+
+  img = loadImage(imagePath);
+  */
+}
 
 function setup() {
-  createCanvas(500, 500); //canvas size
+  createCanvas(width, height); //canvas size
   background("#FFFFFF"); //color of canvas
   createColorPallets();
   
-  
+  //image (img, 0, 0);
+
   initializeStart();
-
-
-
   saveCurrentState(); // Save initial blank state
 }
+
+function requestCanvasSize() {
+  height = parseInt(prompt("Enter Canvas Height"));
+  width = parseInt(prompt("Enter Canvas Width"));
+}
+
+
 
 function initializeStart() {
   //global variables 
@@ -28,6 +46,7 @@ function initializeStart() {
   clonestamp_size = 3;          //how big the clonestamp will be
   size = brush_size;            //the true drawing size
   cursor('../assets/circle.png');
+  
 
   selectedArea = get(0, 0, 1, 1)  //sets selectedArea to a starting value, to fix a crash when the tool was used before a selection was made.
 
