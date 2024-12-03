@@ -368,4 +368,3 @@ function setSecondaryColorPallet() {
   console.log("New Secondary Color Pallet : "+secondary_color);
 }
 
-
