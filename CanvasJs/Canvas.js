@@ -99,36 +99,20 @@ function palletColor2() {
 
 
 
-$(document).ready(function () {
-  // Brush button
-  $("#brushButton").on("click", function () {
-    console.log("Brush tool selected");
+document.addEventListener("DOMContentLoaded", () => {
+  document.getElementById("brushButton").addEventListener("click", () => {
     swapTool("brush");
   });
-
-  // Eraser button
-  $("#eraserButton").on("click", function () {
-    console.log("Eraser tool selected");
+  document.getElementById("eraserButton").addEventListener("click", () => {
     swapTool("eraser");
   });
-
-  // Eyedropper button
-  $("#eyedropperButton").on("click", function () {
-    console.log("Eyedropper tool selected");
+  document.getElementById("eyedropperButton").addEventListener("click", () => {
     swapTool("eyedropper");
   });
-
-  // Clonestamp button
-  $("#stampButton").on("click", function () {
-    console.log("Clonestamp tool selected");
+  document.getElementById("stampButton").addEventListener("click", () => {
     swapTool("clonestamp");
   });
 });
-
-
-
-
-
 
 
 //end of toolbar
