@@ -1,0 +1,192 @@
+/* Canvas Styling */
+canvas {
+    display: block; /* Prevents flex issues */
+    margin: 50px auto; /* Centers the canvas on the page */
+    border: 5px solid black; 
+}
+
+/* Cursor Styling */
+#customCursor {
+    position: absolute;
+    width: 20px; 
+    height: 20px;
+    border-radius: 50%;
+    border: 2px solid black;
+    pointer-events: none;
+}
+
+/* Box for Color Palettes */
+.box {
+    margin-top: 50px; /* Space below navbar */
+    position: relative;
+    height: 100px;
+    display: flex; /* Align color palettes */
+    gap: 20px; /* Space between palettes */
+}
+
+/* First Color Palette */
+.color-pallet2 {
+    position: relative;
+    width: 100px;
+    height: 100px;
+    border-radius: 50%;
+    outline: 5px solid black;
+}
+
+/* Second Color Palette */
+.color-pallet {
+    position: relative;
+    width: 100px;
+    height: 100px;
+    border-radius: 50%;
+    outline: 5px solid black;
+}
+
+/* General Styles */
+body {
+    font-family: Arial, sans-serif;
+    margin: 0;
+    padding: 0;
+    background-color: #f4f4f4;
+    color: #000000;
+}
+
+h1 {
+    text-align: center;
+    color: #333;
+    margin-top: 20px;
+}
+
+/* Navigation Bar */
+.navbar {
+    background-color: #60096b;
+    overflow: hidden;
+    padding: 10px;
+}
+
+.navbar a {
+    float: left;
+    display: block;
+    color: #f2f2f2;
+    text-align: center;
+    padding: 14px 16px;
+    text-decoration: none;
+    transition: background-color 0.3s;
+}
+
+.navbar a:hover {
+    background-color: #666363;
+    color: white;
+}
+
+/* Clearfix for Navigation */
+.navbar::after {
+    content: "";
+    display: block;
+    clear: both;
+}
+
+/* Search Bar Styles */
+.search-form {
+    float: right;
+    margin-right: 20px;
+    margin-top: 10px;
+}
+
+.search-form input[type="text"] {
+    padding: 6px;
+    font-size: 14px;
+    border: none;
+    border-radius: 4px;
+    width: 200px;
+}
+
+.search-form button {
+    padding: 6px 12px;
+    background-color: #9b9a9a;
+    border: none;
+    border-radius: 4px;
+    color: white;
+    cursor: pointer;
+    transition: background-color 0.3s;
+}
+
+.search-form button:hover {
+    background-color: #333;
+}
+
+/* Login Form Styling */
+.login-form {
+    max-width: 400px;
+    margin: 50px auto; 
+    padding: 20px;
+    background-color: #ffffff;
+    border: 1px solid #ddd;
+    border-radius: 10px;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+}
+
+.login-form h2 {
+    text-align: center;
+    color: #60096b;
+    margin-bottom: 20px;
+}
+
+.login-form label {
+    display: block;
+    margin-bottom: 8px;
+    font-weight: bold;
+    color: #333;
+}
+
+.login-form input[type="text"],
+.login-form input[type="password"] {
+    width: 100%;
+    padding: 10px;
+    margin-bottom: 15px;
+    border: 1px solid #ddd;
+    border-radius: 5px;
+    box-sizing: border-box;
+    font-size: 14px;
+}
+
+
+
+.login-form a {
+    display: block;
+    text-align: center;
+    margin-top: 10px;
+    color: #60096b;
+    text-decoration: none;
+    font-size: 14px;
+}
+
+.login-form a:hover {
+    text-decoration: underline;
+}
+
+.toolbarTop {
+    margin-top: 100px;
+    margin-bottom: 10px;
+    width: auto;
+    height: 20px;
+    outline-width: 10px;
+    background-color: rgb(81, 81, 81);
+}
+.toolbarBot {
+    margin-top: 70px;
+    width: auto;
+    height: 20px;
+    outline-width: 10px;
+    background-color: rgb(81, 81, 81);
+}
+.error-message {
+    color: red;
+    font-size: 14px;
+    margin-bottom: 15px;
+    text-align: center;
+    border: 1px solid #ffcccc;
+    background-color: #ffe6e6;
+    padding: 10px;
+    border-radius: 5px;
+}
