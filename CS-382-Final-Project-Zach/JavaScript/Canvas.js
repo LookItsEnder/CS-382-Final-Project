@@ -1,21 +1,19 @@
 let saveStates = [];    //for undoing (ctrl+z)
 let redoStates = [];    //for redoing (shift+ctrl+z)
-let selectedArea = [];
-let width = 0;
-let height = 0;
+let selectedArea = [];  //default selection for clonestamp tool
+let width = 500; //default width of canvas
+let height = 500; //default height of canvas
 
 
 function preload() {
-  requestCanvasSize();
-/*
-  let imagePath = prompt("Select an Image to import:\n 1. mountain\n 2. plains\n 3. water");
 
-  if (imagePath == "mountain") {
-    imagePath = '../assets/image.jpg';
-  }
+  requestCanvasSize();
+  
+  imagePath = '../assets/image.jpg';
+
 
   img = loadImage(imagePath);
-  */
+
 }
 
 function setup() {
@@ -23,7 +21,7 @@ function setup() {
   background("#FFFFFF"); //color of canvas
   createColorPallets();
   
-  //image (img, 0, 0);
+  image (img, 0, 0);
 
   initializeStart();
   saveCurrentState(); // Save initial blank state

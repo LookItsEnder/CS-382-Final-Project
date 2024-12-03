@@ -6,7 +6,7 @@ canvas {
 }
 
 /* Cursor Styling */
-and the .css 
+
 
 /*This is how the cursor swaps to a crosshair for the eyedropper tool
 It is possible to use this for completely custom crosshairs as well, given an
@@ -229,4 +229,23 @@ h1 {
     background-color: #ffe6e6;
     padding: 10px;
     border-radius: 5px;
+}
+
+
+
+.featureContainer{
+    height:100%;
+    display:grid;
+    grid-template-columns:1fr 1fr 1fr 1fr 1fr;
+    gap:1px;
+    justify-content:center;
+    padding:0 15%;
+}
+.piece{
+    width:100%;
+    aspect-ratio:1/1;
+    background:white;
+}
+img{
+    border: solid black 5px;
 }

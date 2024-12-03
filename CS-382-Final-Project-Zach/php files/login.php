@@ -7,7 +7,7 @@ session_start(); // Start the session
 $conn = new mysqli('localhost', 'root', '', 'login');
 
 
-if ($conn -> connect_error ) {
+if ($conn-> connect_error ) {
 
     die("Connection failed: " . $conn-> connect_error );
 
@@ -107,7 +107,7 @@ if ($_SERVER['REQUEST_METHOD'] === 'POST') {
         <!-- Display error message, if any -->
         <?php if (!empty($error)): ?>
 
-
+            
             <p class="error-message"><?php echo htmlspecialchars($error); ?></p>
         <?php endif; ?>
 
