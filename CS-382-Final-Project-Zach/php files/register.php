@@ -53,7 +53,6 @@ if ($_SERVER ['REQUEST_METHOD'] === 'POST') {
    <a href="../WebPages/index.php">Home</a>
    <a href="../WebPages/canvas.php">Canvas</a>
    <a href="../WebPages/Gallery.php">Gallery</a>
-   <a href="#">Contact</a>
    
  
 
