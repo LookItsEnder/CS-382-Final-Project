@@ -66,7 +66,6 @@ $username = $is_logged_in ? $_SESSION ['username'] : null;
         <a href="index.php">Home</a>
         <a href="canvas.php">Canvas</a>
         <a href="Gallery.php">Gallery</a>
-        <a href="">Contact</a>
         
       
        
