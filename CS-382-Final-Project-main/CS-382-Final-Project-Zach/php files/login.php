@@ -84,7 +84,12 @@ if ($_SERVER['REQUEST_METHOD'] === 'POST') {
 <body>
     <!-- Title -->
 
-    <h1>Website Title - Login Page</h1>
+    <div class = 'logo'>
+
+        <img src="../assets/logo.png" alt="logo">
+        <h1>WebSkribble - Login Page</h1>
+
+    </div>
 
     <!-- Navigation Bar -->
     <nav class="navbar">

@@ -30,11 +30,16 @@
         <meta charset="UTF-8">
         <meta name="viewport" content="width=device-width, initial-scale=1.0">
         <title>Art Gallery</title>
-        <link rel="stylesheet" href="../JavaScript/style.css">
+        <link rel="stylesheet" href="../style.css">
     </head>
     <body>
         <!-- Title -->
-        <h1>WebSkribble Gallery</h1>
+        <div class = 'logo'>
+
+            <img src="../assets/logo.png" alt="logo">
+            <h1>WebSkribble - Gallary Page</h1>
+
+        </div>
 
         <!-- Navigation Bar -->
         <nav class="navbar">

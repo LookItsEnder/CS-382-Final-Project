@@ -246,6 +246,44 @@ h1 {
     aspect-ratio:1/1;
     background:white;
 }
-img{
+ img{
     border: solid black 5px;
+}
+
+
+
+.home-container h2 {
+    text-align: center;
+    color: #000000;
+    font-size: 28px;
+    margin-top: 30px;
+    margin-bottom: 15px;
+    font-family: 'Arial', sans-serif;
+}
+
+.home-container p {
+    text-align: justify;
+    line-height: 1.6;
+    font-size: 16px;
+    color: #333333;
+    margin: 20px auto;
+    max-width: 800px;
+    font-family: 'Arial', sans-serif;
+}
+
+.logo{
+
+    display: flex;
+    
+}
+    
+.logo img{
+
+        border:0px;
+    
+        width: 5%;
+    
+        height: 5%;
+    
+    
 }

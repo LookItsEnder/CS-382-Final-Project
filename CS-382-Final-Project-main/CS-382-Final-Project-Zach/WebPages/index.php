@@ -29,7 +29,12 @@ $username = $is_logged_in ? $_SESSION ['username'] : null;
 
 <body>
     <!-- Title -->
-    <h1>Website Title - home Page</h1>
+    <div class = 'logo'>
+
+    <img src="../assets/logo.png" alt="logo">
+    <h1>WebSkribble - Home Page</h1>
+
+    </div>
 
     <!-- Navigation Bar -->
     <nav class="navbar">
@@ -64,6 +69,22 @@ $username = $is_logged_in ? $_SESSION ['username'] : null;
     </div>
        
     </nav>
+
+
+    <div class = "home-container">
+
+        
+        <h2>Welcome to the Art Website's Home Page!</h2>
+
+
+        <p>We are thrilled to have you here! The goal of this website and our creative project is to provide a vibrant platform where art enthusiasts can unleash their creativity. Here, you can draw directly on the site using our intuitive tools or upload your unique artwork to share with others. Once uploaded, your creations will be proudly displayed in our gallery for everyone to admire and enjoy.</p>
+
+
+        <p>Whether you're a seasoned artist, a budding creator, or simply someone who loves exploring the world of art, this is the perfect space to express yourself and connect with a community that values creativity. Dive in, let your imagination soar, and contribute to a growing collection of diverse and inspiring artwork!</p>
+
+
+    </div>
+
 
       
 </body>

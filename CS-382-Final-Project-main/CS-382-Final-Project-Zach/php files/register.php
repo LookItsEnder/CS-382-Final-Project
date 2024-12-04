@@ -41,7 +41,12 @@ if ($_SERVER ['REQUEST_METHOD'] === 'POST') {
 <link rel="stylesheet" href="../style.css">
 
 <!-- Title -->
-<h1>Website Title - Home Page</h1>
+<div class = 'logo'>
+
+    <img src="../assets/logo.png" alt="logo">
+    <h1>WebSkribble - Register Page</h1>
+
+</div>
 
 <!-- Navigation Bar -->
 <nav class="navbar">

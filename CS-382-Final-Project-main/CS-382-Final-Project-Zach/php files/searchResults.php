@@ -36,7 +36,12 @@
     </head>
     <body>
         <!-- Title -->
-        <h1>WebSkribble Gallery Search</h1>
+        <div class = 'logo'>
+
+            <img src="../assets/logo.png" alt="logo">
+            <h1>WebSkribble - Gallary Art Search</h1>
+
+        </div>
 
         <!-- Navigation Bar -->
         <nav class="navbar">

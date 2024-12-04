@@ -54,7 +54,12 @@ $username = $is_logged_in ? $_SESSION ['username'] : null;
 
 <body>
     <!-- Title -->
-    <h1>Website Title - Canvas Page</h1>
+    <div class = 'logo'>
+
+        <img src="../assets/logo.png" alt="logo">
+        <h1>WebSkribble - Canvas Page</h1>
+
+    </div>
 
     <!-- Navigation Bar -->
     <nav class="navbar">
