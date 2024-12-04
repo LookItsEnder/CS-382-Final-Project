@@ -55,11 +55,7 @@ if ($_SERVER ['REQUEST_METHOD'] === 'POST') {
    <a href="../WebPages/Gallery.php">Gallery</a>
    <a href="#">Contact</a>
    
-   <!-- Search Bar -->
-   <form class="search-form" action="searchResults.html" method="GET">
-       <input type="text" placeholder="Search..." name="search">
-       <button type="submit">Search</button>
-   </form>
+ 
 
    <!-- Login and Register Buttons -->
    <div class="auth-buttons">

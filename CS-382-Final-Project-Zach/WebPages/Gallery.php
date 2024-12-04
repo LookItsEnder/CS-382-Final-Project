@@ -92,13 +92,6 @@
                 ?>
             </div>
         </div>
-        <div class="searchBar">
-            <p>Enter an ID to look up:</p>
-            <!-- Search Bar -->
-            <form action="../php files/searchResults.php" method="GET">
-                <input type="text" placeholder="Search..." name="search" required>
-                <button type="submit">Search</button>
-            </form>
-        </div>
+       
     </body>
 </html>

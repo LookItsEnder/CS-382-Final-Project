@@ -68,11 +68,8 @@ $username = $is_logged_in ? $_SESSION ['username'] : null;
         <a href="Gallery.php">Gallery</a>
         <a href="">Contact</a>
         
-        <!-- Search Bar -->
-        <form class="search-form" action="searchResults.html" method="GET">
-            <input type="text" placeholder="Search..." name="search">
-            <button type="submit">Search</button>
-        </form>
+      
+       
  <!-- Login/Register or User Info -->
 
     <div class="auth-buttons">
