@@ -67,7 +67,7 @@
 
         <!-- Featured Artworks Section -->
         <div class="featured">
-            <h3>Check out some featured Artwork!</h3>
+            <h3 class="gall-title">Check out some featured Artwork!</h3>
             <div class="featureContainer">
                 <?php
                 // Fetch the maximum ID in the `art` table

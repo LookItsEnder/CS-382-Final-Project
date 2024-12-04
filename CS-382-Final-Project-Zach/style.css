@@ -255,7 +255,11 @@ img{
     margin-right: auto;
     width: 30%;
 }
-
+.gall-title{
+    text-align: center;
+    color: #333;
+    margin-top: 20px;
+}
 
 .home-container h2 {
     text-align: center;
