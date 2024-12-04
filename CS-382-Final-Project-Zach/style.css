@@ -246,10 +246,15 @@ h1 {
     aspect-ratio:1/1;
     background:white;
 }
- img{
+img{
     border: solid black 5px;
 }
-
+.result{
+    display: block;
+    margin-left: auto;
+    margin-right: auto;
+    width: 30%;
+}
 
 
 .home-container h2 {

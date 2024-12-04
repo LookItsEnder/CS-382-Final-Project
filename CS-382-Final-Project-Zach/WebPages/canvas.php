@@ -142,16 +142,17 @@ $username = $is_logged_in ? $_SESSION ['username'] : null;
                 <li>B: Brush Tool ([ to shrink, ] to grow)</li>
                 <li>I: Eyedropper Tool</li>
                 <li>S: Clonestamp Tool -> Ctrl Left click to take an area.</li>
-                <li>E: Eraser Tool</li></ul></div>
-            <p>If theres an artwork you would like to upload, you can do so here:</p>
-            
-        <form method="POST" action="" enctype="multipart/form-data">
-
-                <input class="form-control" type="file" name="uploadfile" value="" />
-
-                <button class="btn btn-primary" type="submit" name="upload">Upload to the Website!</button>
-
-        </form>
+                <li>E: Eraser Tool</li></ul>
+                <p>If theres an artwork you would like to upload, you can do so here:</p>
+                
+                <form method="POST" action="" enctype="multipart/form-data">
+                    
+                    <input class="form-control" type="file" name="uploadfile" value="" />
+                    
+                    <button class="btn btn-primary" type="submit" name="upload">Upload to the Website!</button>
+                    
+                </form>
+            </div>
     </div>
    
 

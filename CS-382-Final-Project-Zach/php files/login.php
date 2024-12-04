@@ -97,7 +97,6 @@ if ($_SERVER['REQUEST_METHOD'] === 'POST') {
         <a href="../WebPages/canvas.php">Canvas</a>
         <a href="../WebPages/Gallery.php">Gallery</a>
 
-
         <!-- Login and Register Buttons -->
         <div class="auth-buttons">
             <a href="../php files/login.php" class="button">Login</a>

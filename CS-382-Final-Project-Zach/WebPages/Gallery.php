@@ -56,6 +56,13 @@
                     <a href="../php files/register.php" class="button">Register</a>
                 <?php endif; ?>
             </div>
+            <div class="search-form">
+            <!-- Search Bar -->
+            <form action="../php files/searchResults.php" method="GET">
+                <input type="text" placeholder="Enter an ID to search!" name="search" required>
+                <button type="submit">Search</button>
+            </form>
+            </div>
         </nav>
 
         <!-- Featured Artworks Section -->
@@ -93,5 +100,7 @@
             </div>
         </div>
        
+
+
     </body>
 </html>

@@ -57,28 +57,28 @@
                     <a href="../php files/login.php" class="button">Login</a>
                     <a href="../php files/register.php" class="button">Register</a>
                 <?php endif; ?>
+                <div class="search-form">
+                    <!-- Search Bar -->
+                    <form action="../php files/searchResults.php" method="GET">
+                        <input type="text" placeholder="Enter an ID to search!" name="search" required>
+                        <button type="submit">Search</button>
+                    </form>
+                </div>
             </div>
         </nav>
 
-        <div>
+        <div >
             <?php
                 //if query is empty, show error and ask to try again
-                if($result == null){echo "<p><b>Image Not Found!</b></p>";}
+                if($result == null){echo "<h1>Image Not Found!</h1>";}
                 //else show image
                 else{
                     echo"<h1>This is Artwork Entry $search!</h1>";
-                    echo"<img src=\"../images/$result\" height=\"25%\" width=\"25%\">";
+                    echo"<img class=\"result\" src=\"../images/$result\" height=\"25%\" width=\"25%\">";
                 }
             ?>
         </div>
 
-        <div class="searchBar">
-            <p>Enter an ID to look up:</p>
-            <!-- Search Bar -->
-            <form action="../php files/searchResults.php" method="GET">
-                <input type="text" placeholder="Search..." name="search" required>
-                <button type="submit">Search</button>
-            </form>
-        </div>
+
     </body>
 </html>
